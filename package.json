@@ -15,7 +15,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch src/server.js",
+    "dev": "tsx watch src/server.ts",
     "format:fix": "prettier --write",
     "lint:check": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -28,6 +28,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^17.0.7",
     "prettier": "3.8.4",
+    "tsx": "^4.22.4",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.61.0"
   },
@@ -36,5 +37,8 @@
       "npm run format:fix",
       "npm run lint:fix"
     ]
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
   }
 }

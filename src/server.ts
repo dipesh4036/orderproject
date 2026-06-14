@@ -1,9 +1,3 @@
-function userName(name: string) {
-    const user = {
-        name: name,
-    };
+import { Config } from './config/index.js';
 
-    return user.name;
-}
-
-userName('dipesh');
+console.log(Config.PORT);
